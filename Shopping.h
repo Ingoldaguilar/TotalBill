@@ -1,26 +1,31 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/cppFiles/class.h to edit this template
- */
-
-/* 
- * File:   Shopping.h
- * Author: Admin
- *
- * Created on February 28, 2023, 2:30 PM
- */
-
 #ifndef SHOPPING_H
 #define SHOPPING_H
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+
+using namespace std;
 
 class Shopping {
 public:
     Shopping();
-    Shopping(const Shopping& orig);
     virtual ~Shopping();
+    
+    void menu();
+    void administrator();
+    void buyer();
+    void add();
+    void edit();
+    void remove();
+    void list();
+    void receipt();
+    
 private:
-
+    int pcode;
+    float price;
+    float dis;
+    string pname;
 };
 
-#endif /* SHOPPING_H */
+#endif 
 
